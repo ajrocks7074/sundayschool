@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+ <div class="container">
+
+    <center><h1>Sunday School</h1>
+        <span>An initiative from FSMK</span></center></h1>
+  <a href="register.html"><button type="button" class="btn btn-info" style="float:right">Register</button></a><a href="login.html"> <button type="button" class="btn btn-info" style="float:right; margin-right:10px;">Log in</button></h1></a>
+   </div>
+
+
+
+   <div class="container" style="margin-top:  10px;">
+<ul class="nav nav-pills nav-justified">
+  <li ><a href="index.html">Home</a></li>
+  <li class="active" ><a href="request.html">Request a session</a></li>
+   <li><a href="contact.html">Contact us</a></li>
+   <li></li> 
+   <li></li> 
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+</div>
+
+
+
+
+    <h1 style="margin-left: 130px;">Request a Session</h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+<div class="container" style="margin-left: 140px;">
+<form role="form" method="post" action="#">
+  <div class="form-group">
+
+    <label for="name"><small><h5>Name (required)</h5> </small></label>
+    <input type="text" name="name" id="name" value="" size="22" class="form-control" style="width: 200px;" />
+    <br>
+    <label for="email"><small><h5>Mail (required)</h5></small></label>
+    <input type="text" name="email" id="email" value="" size="22" class="form-control" style="width: 200px;" />
+    <br>
+    <label for="mobile"><small><h5>Mobile (required)</h5></small></label>
+    <input type="text" name="mobile" id="mobile" value="" size="22" class="form-control" style="width: 200px;"  />
+    <br>
+    <label for="technology" ><small><h5>Technology<h5></small></label>
+    <select>
+	<option value="C#.NET">C# .NET</option>
+	<option value="VB.NET">VB .NET</option>
+	<option value="ASP.NET">ASP.NET</option>
+        <option value="Ruby On Rails">Ruby On Rails</option>
+        <option value="Node JS">Node JS</option>
+        <option value="Apache">Apache</option>
+        <option value="MongoDB">MongoDB</option>
+    </select>
+    <br>
+    <label for="sessiontype" ><h5>Session Type: <h5></label>
+    <br>
+    <label for="Session"><small>Session</small></label>
+    <input type="radio" name="sessiontype" id="sessiontype" value="Session" >
+
+    <label for="sessiontype"><small>WorkShop</small></label>
+    <input type="radio" name="sessiontype" id="sessiontype" value="Camp">
+    <label for="sessiontype"><small>Camp</small></label>
+    <input type="radio" name="sessiontype" id="NooP">
+  </input>
+    <br>
+    <label for="NooP"><h5>No of Participants</h5></label>
+    <input type="number" name="NooP" id="NooP" value=0>
+    <br>
+    <label for="date"><h5>From Date</h5></label>
+    <input type="date" name="date" id="date" value="" size="22" />
+    <br>
+    <label for="date"><h5>To Date</h5></label>
+    <input type="date" name="date" id="date" value="" size="22" />
+    <br>
+    <label for="venue"><h5>Venue</h5></label>
+    <input name="venue" id="venue">
+    <br>
+    <label for="comments"><h5>Comments</h5></label>
+    <textarea name="comment" id="comment" cols="100%" rows="10"></textarea>
+    <br>
+    <button type="button" class="btn btn-info"  />Submit</button>
+</form>
