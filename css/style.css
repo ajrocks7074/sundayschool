@@ -1,6 +1,12 @@
-#titless span{
-	margin-left: -80px; 
+.container center h1{
+background: rgba(243, 243, 147, 0.56);
+color: rgba(128, 16, 16, 1);
+
 }
+
+ .container center span{
+ 	color: rgba(96, 89, 89, 0.81);
+ }
 
 #thisweek img{
     
@@ -10,5 +16,25 @@
     text-align: center;
      font-size: 50px;
      color: white;
+     margin-left: -150px;
+     padding: 115px 20px 20px 20px;
+     margin-right: 50px;
 
+}
+
+#thisweek #tw_desc p{
+	margin-top: 20px;
+	margin-left: 360px;
+
+}
+
+#titles h1{
+	background: rgba(255, 255, 191, 1);
+}
+
+
+#thisweek #tw_desc h1{
+	padding: 50px 20px 20px 50px;
+	color: gray;
+	margin-left: 360px;
 }
