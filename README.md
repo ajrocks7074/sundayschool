@@ -9,9 +9,13 @@ To contribute:
 5. Create a pull request to my repo from your account
 
 
+<<<<<<< HEAD
 
 The site is responsive.
 
 
 
 
+=======
+The site is reponsive.
+>>>>>>> 3011d697b1032fee0daed4cbff9d827e87f24449
