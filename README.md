@@ -9,5 +9,4 @@ To contribute:
 5. Create a pull request to my repo from your account
 
 
-
-
+The site is reponsive.
