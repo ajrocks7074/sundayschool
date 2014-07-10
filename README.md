@@ -10,4 +10,8 @@ To contribute:
 
 
 
+The site is responsive.
+
+
+
 
