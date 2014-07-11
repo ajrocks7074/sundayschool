@@ -1,5 +1,7 @@
 
-a#login_pop:hover, a#join_pop:hover, a#concert_1_pop:hover {
+
+
+a#login_pop:hover, a#join_pop:hover{
     border-color: #31b2c3; background:#31b2c3;
 }
 .overlay {
