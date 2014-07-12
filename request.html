@@ -9,6 +9,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
+    <link href="css/popup.css" rel="stylesheet">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -19,12 +21,24 @@
     <![endif]-->
   </head>
 <body>
-     <div class="container">
+    
+
+
+    <div class="container">
 
     <center><h1>Sunday School</h1>
         <span>An iniative from FSMK</span></center>
-  <a href="register.html"><button type="button" class="btn btn-info" style="float:right">Register</button></a><a href="login.html"> <button type="button" class="btn btn-info" style="float:right; margin-right:10px;">Log in</button></a>
+  <a href="#join_form" id="join_form_pop">
+  <button type="button" class="btn btn-info" style="float:right">Register</button>
+  </a>
+  <a href="#login_form" id="login_form_pop">
+  <button type="button" class="btn btn-info" style="float:right; margin-right:10px;">
+  Log in</button></h1></a>
    </div>
+
+
+
+
 
 
 
@@ -42,75 +56,206 @@
      </div>
 
 
-    <h1 style="margin-left: 149px;">Request a Session</h1>
-
     
 
 
-<div class="container" style="margin-left: 150px;">
-<form role="form" method="post" action="#">
-  <div class="form-group">
 
-    <label for="name"><small><h5>Name (required)</h5> </small></label>
-    <input type="text" name="name" id="name" value="" size="22" class="form-control" style="width: 200px;" />
-    <br>
-    <label for="email"><small><h5>Mail (required)</h5></small></label>
-    <input type="text" name="email" id="email" value="" size="22" class="form-control" style="width: 200px;" />
-    <br>
-    <label for="mobile"><small><h5>Mobile (required)</h5></small></label>
-    <input type="text" name="mobile" id="mobile" value="" size="22" class="form-control" style="width: 200px;"  />
-    <br>
-    <label for="technology" ><small><h5>Technology<h5></small></label>
-    <select>
-	<option value="C#.NET">C# .NET</option>
-	<option value="VB.NET">VB .NET</option>
-	<option value="ASP.NET">ASP.NET</option>
+  <div class="container">
+     <form role="form">
+   <div class="contact_form" style=" margin-left: 50px; margin-top: 50px; " >
+    
+      <div class="input-group">
+      <span class="input-group-addon" style="width:80px;">Name:</span>
+      <input type="text" class="form-control" placeholder="" style="width: 300px;">
+      </div>
+
+      <div class="input-group" style="margin-top:20px;">
+      <span class="input-group-addon" style="width:80px;">Email id:</span>
+      <input type="email" class="form-control" placeholder="" style="width: 300px;">
+      </div>    
+
+      <div class="input-group" style="margin-top:20px;">
+      <span class="input-group-addon" style="width:80px;">Mobile:</span>
+      <input type="number" class="form-control" placeholder="" style="width: 300px;">
+      </div>
+
+
+<div class="dropdown" style="margin-top : 20px;">
+<h4>Technology:</h4>
+  <select>
+  <option value="C#.NET">C# .NET</option>
+  <option value="VB.NET">VB .NET</option>
+  <option value="ASP.NET">ASP.NET</option>
         <option value="Ruby On Rails">Ruby On Rails</option>
         <option value="Node JS">Node JS</option>
         <option value="Apache">Apache</option>
         <option value="MongoDB">MongoDB</option>
     </select>
-    <br>
-    <label for="sessiontype" ><h5>Session Type: <h5></label>
-    <br>
+</div>
+
+
+
+<div id="Session" style="margin-top: 20px;">
+  <h4>Session type:</h4>
+ <div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-warning active"> 
+    <input type="radio" name="options" id="option1" checked>Seminar
+  </label>
+  <label class="btn btn-warning">
+    <input type="radio" name="options" id="option2">Workshop
+  </label>
+  <label class="btn btn-warning">
+    <input type="radio" name="options" id="option3">Camp
+  </label>
+</div>
+
+</div>
+   
+
     
-    <label for="Session"><small>Session</small></label>
-    <input type="radio" name="sessiontype" id="sessiontype" value="Session" >
+    <label for="NooP" style="margin-top: 20px;"><h4>No of Participants:</h4></label>
+    <input type="number" class="form-control" placeholder="" style="width: 80px;">
 
-    <label for="sessiontype"><small>WorkShop</small></label>
-    <input type="radio" name="sessiontype" id="sessiontype" value="Camp">
-    <label for="sessiontype"><small>Camp</small></label>
-    <input type="radio" name="sessiontype" id="NooP">
+    <label for="date" style="margin-top: 20px;"><h5>From Date:</h5></label>
+    <input type="date" class="form-control" style="width: 100px;" >
+   
+   <label for="date" style="margin-top: 20px;"><h5>To Date:</h5></label>
+    <input type="date" class="form-control" style="width: 100px;" >
+    
 
-    <br>
-    <label for="NooP"><h5>No of Participants</h5></label>
-    <input type="number" name="NooP" id="NooP" value=0>
-    <br>
-    <label for="date"><h5>From Date</h5></label>
-    <input type="date" name="date" id="date" value="" size="22" />
-    <br>
-    <label for="date"><h5>To Date</h5></label>
-    <input type="date" name="date" id="date" value="" size="22" />
-    <br>
-    <label for="venue"><h5>Venue</h5></label>
-    <input name="venue" id="venue">
-    <br>
-    <label for="comments"><h5>Comments</h5></label>
-    <textarea name="comment" id="comment" cols="100%" rows="10"></textarea>
-    <br>
-    <button type="button" class="btn btn-info"  />Submit</button>
-</form>
+    <label for="venue" style="margin-top: 20px;"><h4>Venue:</h4></label>
+    <input type="date" class="form-control" style="width: 250px;" >
+    
+    
+
+    <div class="comments" style="margin-top: 20px;">
+  <h4>Comment here:</h4>
+<textarea style="width: 350px; height: 100px;"></textarea>
+</div>
+
+     <button type="submit" class="btn btn-default" style="margin-top: 20px;">Submit</button>
+
+
+
+
+    </form>
+    </div>
 
 <div class="container" style="margin-top: 50px;">
 
 <div class="panel panel-default">
 
-  <div class="panel-footer" style="color: rgba(115, 115, 135, 1);"><center><!--<span class="glyphicon glyphicon-copyright-mark"></span> YouthCouch Pvt. Ltd. <span class=" glyphicon glyphicon-chevron-left"></span><span class=" glyphicon glyphicon-chevron-right"></span> <span class=" glyphicon glyphicon-heart"></span> by <a href="http://jeevanmr.com" target="_blank" style="text-decoration: none">Jeevan </a>  --><p>Copyleft 2011 - Some Rights are reserved -fsmk.org</p> <span class=" glyphicon glyphicon-wrench" style="margin-left: 10px; "></span> Site Under Construction
+  <div class="panel-footer" style="color: rgba(115, 115, 135, 1);"><center><!--<span class="glyphicon glyphicon-copyright-mark"></span> YouthCouch Pvt. Ltd. <span class=" glyphicon glyphicon-chevron-left"></span><span class=" glyphicon glyphicon-chevron-right"></span> <span class=" glyphicon glyphicon-heart"></span> by <a href="http://jeevanmr.com" target="_blank" style="text-decoration: none">Jeevan </a>  --><p>Copyleft 2014 - Some Rights are reserved -fsmk.org</p> <span class=" glyphicon glyphicon-wrench" style="margin-left: 10px; "></span> Site Under Construction
 </center></div>
 </div>
 
 
 </div>
+
+
+
+
+ <!-- popup form #1 -->
+        <a href="#x" class="overlay" id="login_form"></a>
+        <div class="popup">
+            <h2>Welcome Guest!</h2>
+            <p>Please enter your login and password here</p>
+            <div>
+                <label for="login">Login</label>
+                <input type="text" id="login" value="" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" value="" />
+            </div>
+            <input type="button" value="Log In" />
+
+            <a class="close" href="#close"></a>
+        </div>
+
+        <!-- popup form #2 -->
+        <a href="#x" class="overlay" id="join_form"></a>
+        <div class="popup">
+            <h2>Sign Up</h2>
+            <p>Please enter your details here</p>
+            <div>
+                <label for="email">Login (Email)</label>
+                <input type="text" id="email" value="" />
+            </div>
+            <div>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" value="" />
+            </div>
+            <div>
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname" value="" />
+            </div>
+            <div>
+                <label for="lastname">Last name</label>
+                <input type="text" id="lastname" value="" />
+            </div>
+            <input type="button" value="Sign Up" />   or   <a href="#login_form" id="login_pop">Log In</a>
+
+            <a class="close" href="#close"></a>
+        </div>
+
+
+
+
+
+
+
+
+
+ <!-- popup form #1 -->
+        <a href="#x" class="overlay" id="login_form"></a>
+        <div class="popup">
+            <h2>Welcome Guest!</h2>
+            <p>Please enter your login and password here</p>
+            <div>
+                <label for="login">Login</label>
+                <input type="text" id="login" value="" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" value="" />
+            </div>
+            <input type="button" value="Log In" />
+
+            <a class="close" href="#close"></a>
+        </div>
+
+        <!-- popup form #2 -->
+        <a href="#x" class="overlay" id="join_form"></a>
+        <div class="popup">
+            <h2>Sign Up</h2>
+            <p>Please enter your details here</p>
+            <div>
+                <label for="email">Login (Email)</label>
+                <input type="text" id="email" value="" />
+            </div>
+            <div>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" value="" />
+            </div>
+            <div>
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname" value="" />
+            </div>
+            <div>
+                <label for="lastname">Last name</label>
+                <input type="text" id="lastname" value="" />
+            </div>
+            <input type="button" value="Sign Up" />   or   <a href="#login_form" id="login_pop">Log In</a>
+
+            <a class="close" href="#close"></a>
+        </div>
+
+
+
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

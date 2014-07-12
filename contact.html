@@ -9,6 +9,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
+    <link href="css/popup.css" rel="stylesheet">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -19,11 +21,19 @@
     <![endif]-->
   </head>
 <body>
-	   <div class="container">
+	  
+
+
+    <div class="container">
 
     <center><h1>Sunday School</h1>
         <span>An iniative from FSMK</span></center>
-  <a href="register.html"><button type="button" class="btn btn-info" style="float:right">Register</button></a><a href="login.html"> <button type="button" class="btn btn-info" style="float:right; margin-right:10px;">Log in</button></a>
+  <a href="#join_form" id="join_form_pop">
+  <button type="button" class="btn btn-info" style="float:right">Register</button>
+  </a>
+  <a href="#login_form" id="login_form_pop">
+  <button type="button" class="btn btn-info" style="float:right; margin-right:10px;">
+  Log in</button></h1></a>
    </div>
 
 
@@ -114,12 +124,60 @@
 
 <div class="panel panel-default">
 
-  <div class="panel-footer" style="color: rgba(115, 115, 135, 1);"><center><!--<span class="glyphicon glyphicon-copyright-mark"></span> YouthCouch Pvt. Ltd. <span class=" glyphicon glyphicon-chevron-left"></span><span class=" glyphicon glyphicon-chevron-right"></span> <span class=" glyphicon glyphicon-heart"></span> by <a href="http://jeevanmr.com" target="_blank" style="text-decoration: none">Jeevan </a>  --><p>Copyleft 2011 - Some Rights are reserved -fsmk.org</p> <span class=" glyphicon glyphicon-wrench" style="margin-left: 10px; "></span> Site Under Construction
+  <div class="panel-footer" style="color: rgba(115, 115, 135, 1);"><center><!--<span class="glyphicon glyphicon-copyright-mark"></span> YouthCouch Pvt. Ltd. <span class=" glyphicon glyphicon-chevron-left"></span><span class=" glyphicon glyphicon-chevron-right"></span> <span class=" glyphicon glyphicon-heart"></span> by <a href="http://jeevanmr.com" target="_blank" style="text-decoration: none">Jeevan </a>  --><p>Copyleft 2014 - Some Rights are reserved -fsmk.org</p> <span class=" glyphicon glyphicon-wrench" style="margin-left: 10px; "></span> Site Under Construction
 </center></div>
 </div>
-
-
 </div>
+
+
+
+
+
+
+ <!-- popup form #1 -->
+        <a href="#x" class="overlay" id="login_form"></a>
+        <div class="popup">
+            <h2>Welcome Guest!</h2>
+            <p>Please enter your login and password here</p>
+            <div>
+                <label for="login">Login</label>
+                <input type="text" id="login" value="" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" value="" />
+            </div>
+            <input type="button" value="Log In" />
+
+            <a class="close" href="#close"></a>
+        </div>
+
+        <!-- popup form #2 -->
+        <a href="#x" class="overlay" id="join_form"></a>
+        <div class="popup">
+            <h2>Sign Up</h2>
+            <p>Please enter your details here</p>
+            <div>
+                <label for="email">Login (Email)</label>
+                <input type="text" id="email" value="" />
+            </div>
+            <div>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" value="" />
+            </div>
+            <div>
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname" value="" />
+            </div>
+            <div>
+                <label for="lastname">Last name</label>
+                <input type="text" id="lastname" value="" />
+            </div>
+            <input type="button" value="Sign Up" />   or   <a href="#login_form" id="login_pop">Log In</a>
+
+            <a class="close" href="#close"></a>
+        </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
